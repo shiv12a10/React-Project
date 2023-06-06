@@ -20,7 +20,7 @@ const Navigation = () => {
                     <li className='ml-6'>
                         <Link to='/cart'>
                            <div style={cartStyle}>
-                              <span>10</span>
+                              <span>{JSON.parse(localStorage.getItem('items')).length}</span>
                               <img className='ml-2' src="/images/cart.png" alt="cart-icon" />
                            </div> 
                         </Link></li>
